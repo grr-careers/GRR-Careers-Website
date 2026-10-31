@@ -1,94 +1,98 @@
-import Image from 'next/image'
-import { Icon } from '@iconify/react/dist/iconify.js'
+import Image from "next/image";
+import { Icon } from "@iconify/react/dist/iconify.js";
 
-const   Hero = () => {
+const Hero = () => {
   return (
-    <section id='home-section' className='bg-slate-gray'>
-      <div className='container pt-16'>
-        <div className='grid grid-cols-1 lg:grid-cols-12 lg:gap-1 gap-10 items-center'>
-          <div className='col-span-6 flex flex-col gap-8'>
-            <div className='flex gap-2 mx-auto lg:mx-0'>
-              <Icon
-                icon='solar:verified-check-bold'
-                className='text-success text-xl inline-block me-2'
-              />
-              <p className='text-success text-sm font-semibold text-center lg:text-start tracking-widest uppercase'>
-                Get 30% off on first enroll
-              </p>
-            </div>
-            <h1 className='text-midnight_text lg:text-start text-center font-semibold leading-tight capitalize'>
-              Learn Engineering from Top Experts
+    <section id="home-section" className="bg-white">
+      <div className="container pt-16 pb-10">
+        <div className="grid grid-cols-1 lg:grid-cols-12 lg:gap-6 gap-10 items-center">
+          {/* Left Content */}
+          <div className="col-span-6 flex flex-col gap-7">
+            <h1 className="text-midnight_text lg:text-start text-center font-semibold leading-tight text-4xl sm:text-5xl lg:text-4xl">
+              Master Embedded Systems with Industry Experts
             </h1>
-            <p className='text-black/70 text-lg lg:text-start text-center max-w-xl capitalize'>
-              Build skills with our courses and mentor from world-class
-              companies.
+
+            <p className="text-black/70 text-lg lg:text-start text-center max-w-xl leading-8">
+              Build a strong foundation in Embedded C, ARM Architecture,
+              Microcontrollers, and Firmware Development through practical
+              training, real-time projects, and industry-oriented learning. Turn
+              your technical knowledge into real-world engineering skills.
             </p>
-            <div className='relative rounded-full'>
-              <input
-                type='text'
-                name='course'
-                className='py-4 pl-8 pr-20 text-lg w-full text-black rounded-full border border-black/10 focus:outline-hidden focus:border-primary duration-300 shadow-input-shadow'
-                placeholder='Search engineering courses...'
-                autoComplete='off'
-              />
-              <button className='group border border-secondary bg-secondary hover:bg-transparent p-3 rounded-full absolute right-2 top-1.5 duration-300 hover:cursor-pointer'>
-                <Icon
-                  icon='solar:magnifer-linear'
-                  className='text-white group-hover:text-primary text-2xl inline-block duration-300'
-                />
-              </button>
+
+            {/* Call to Action Buttons */}
+            <div className="flex flex-wrap gap-4 pt-3 justify-center lg:justify-start">
+              <a
+                href="/#courses"
+                className="inline-flex items-center gap-3 bg-purple-600 hover:bg-purple-700 text-white font-semibold px-8 py-4 transition duration-300"
+              >
+                Explore Courses
+                <Icon icon="solar:arrow-right-linear" className="text-2xl" />
+              </a>
+
+              <a
+                href="/contact"
+                className="inline-flex items-center gap-3 bg-midnight_text hover:bg-purple-600 text-white font-semibold px-8 py-4 transition duration-300"
+              >
+                Enroll Now
+                <Icon icon="solar:arrow-right-linear" className="text-2xl" />
+              </a>
             </div>
-            <div className='flex items-center justify-between pt-10 lg:pt-4 flex-wrap gap-4'>
-              <div className='flex gap-2'>
+
+            {/* Training Highlights */}
+            <div className="flex flex-wrap items-center gap-x-6 gap-y-4 pt-5 justify-center lg:justify-start">
+              <div className="flex items-center gap-2">
                 <Image
-                  src='/images/banner/check-circle.svg'
-                  alt='check-image'
-                  width={30}
-                  height={30}
-                  className='smallImage'
+                  src="/images/banner/check-circle.svg"
+                  alt="check"
+                  width={24}
+                  height={24}
                 />
-                <p className='text-sm sm:text-lg font-normal text-black'>
-                  Flexible Schedules
+                <p className="text-sm sm:text-base text-black">
+                  Hands-on Hardware Training
                 </p>
               </div>
-              <div className='flex gap-2'>
+
+              <div className="flex items-center gap-2">
                 <Image
-                  src='/images/banner/check-circle.svg'
-                  alt='check-image'
-                  width={30}
-                  height={30}
-                  className='smallImage'
+                  src="/images/banner/check-circle.svg"
+                  alt="check"
+                  width={24}
+                  height={24}
                 />
-                <p className='text-sm sm:text-lg font-normal text-black'>
-                  Guided Learning Paths
+                <p className="text-sm sm:text-base text-black">
+                  Real-Time Projects
                 </p>
               </div>
-              <div className='flex gap-2'>
+
+              <div className="flex items-center gap-2">
                 <Image
-                  src='/images/banner/check-circle.svg'
-                  alt='check-image'
-                  width={30}
-                  height={30}
-                  className='smallImage'
+                  src="/images/banner/check-circle.svg"
+                  alt="check"
+                  width={24}
+                  height={24}
                 />
-                <p className='text-sm sm:text-lg font-normal text-black'>
-                  Peer Support Community
+                <p className="text-sm sm:text-base text-black">
+                  Career-Focused Learning
                 </p>
               </div>
             </div>
           </div>
-          <div className='col-span-6 flex justify-center'>
+
+          {/* Right Image */}
+          <div className="col-span-6 flex justify-center items-center">
             <Image
-              src='/images/banner/mahila.webp'
-              alt='nothing'
+              src="/images/banner/CollaborativeEmbeddedSystemsLearningLab.png"
+              alt="Embedded systems engineering training"
               width={1000}
               height={805}
+              priority
+              className="w-full h-auto max-w-2xl object-contain"
             />
           </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

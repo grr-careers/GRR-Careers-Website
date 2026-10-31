@@ -30,7 +30,10 @@ const Breadcrumb: React.FC<BreadcrumbProps> = ({
                 </li>
                 <li>
                   <p className="text-body-color flex items-center gap-[10px] text-base font-medium">
-                    <span className="text-body-color dark:text-white dark:text-opacity-50"> / </span>
+                    <span className="text-body-color dark:text-white dark:text-opacity-50">
+                      {" "}
+                      /{" "}
+                    </span>
                     {pageName}
                   </p>
                 </li>
