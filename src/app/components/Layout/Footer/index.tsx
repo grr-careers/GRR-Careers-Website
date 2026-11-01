@@ -31,7 +31,7 @@ const Footer = () => {
             <div className="mb-10">
               <Logo />
             </div>
-            <div className="flex items-center gap-4">
+            {/* <div className="flex items-center gap-4">
               <Link
                 href="https://facebook.com"
                 className="hover:text-primary text-black text-3xl"
@@ -50,7 +50,7 @@ const Footer = () => {
               >
                 <Icon icon="tabler:brand-instagram" />
               </Link>
-            </div>
+            </div> */}
           </div>
           <div className="col-span-2">
             <div className="flex gap-20">
@@ -83,7 +83,7 @@ const Footer = () => {
                   className="text-primary text-3xl lg:text-2xl inline-block me-2"
                 />
                 <p className="text-black text-base">
-                  925 Filbert Street Pennsylvania 18072
+                  Sai bablaji residential, Mahadevapura, Banglore, Karnataka(560048)
                 </p>
               </div>
               <Link
@@ -95,7 +95,7 @@ const Footer = () => {
                   className="text-primary text-3xl lg:text-2xl inline-block me-2"
                 />
                 <p className="text-black/60 hover:text-primary text-base">
-                  +1(909) 235-9814
+                  +91 9148575968
                 </p>
               </Link>
               <Link href="/" className="flex items-center w-fit">
