@@ -1,87 +1,183 @@
+// export const QuickStart = () => {
+//   return (
+//     <div className="pb-10 md:scroll-m-[180px] scroll-m-28" id="start">
+//       <h3 className=" text-black text-2xl font-semibold mt-8">Quick Start</h3>
+//       <div className="p-6 rounded-md border mt-6 border-dark_border border-opacity-60">
+//         <h6 className="text-black text-lg font-medium">1. Requirements</h6>
+//         <p className="text-base font-medium text-muted text-opacity-60">
+//           Before proceeding, you need to have the latest stable{" "}
+//           <a href="https://nodejs.org/" className="text-primary">
+//             node.js
+//           </a>{" "}
+//         </p>
+//         <h6 className="mt-4 mb-2 text-black font-medium text-base">
+//           Recommended environment:
+//         </h6>
+//         <ul className="list-disc text-muted text-opacity-60 ps-6">
+//           <li>node js 20+</li>
+//           <li>npm js 10+</li>
+//         </ul>
+//       </div>
+//       <div className="p-6 rounded-md border mt-6 border-dark_border border-opacity-60">
+//         <h6 className="text-black text-lg font-medium">2. Install</h6>
+//         <p className="text-base font-medium text-muted text-opacity-60">
+//           Open package folder and install its dependencies. We recommanded yarn
+//           or npm.{" "}
+//         </p>
+//         <h6 className="mt-4 mb-2 text-black text-dark font-medium text-base">
+//           1) Install with npm:
+//         </h6>
+//         <div className="py-4 px-3 rounded-md bg-dark_grey">
+//           <p className="text-sm text-black/60">
+//             <span className="text-yellow-500">cd</span> project-folder
+//           </p>
+//           <p className="text-sm text-black/60 mt-2">npm install</p>
+//         </div>
+//         <h6 className="mt-4 mb-2 text-black text-dark font-medium text-base">
+//           1) Install with yarn:
+//         </h6>
+//         <div className="py-4 px-3 rounded-md bg-dark_grey">
+//           <p className="text-sm text-black/60">
+//             <span className="text-yellow-500">cd</span> project-folder
+//           </p>
+//           <p className="text-sm text-black/60 mt-2">yarn install</p>
+//         </div>
+//       </div>
+//       <div className="p-6 rounded-md border mt-6 border-dark_border border-opacity-60">
+//         <h6 className="text-black text-lg font-medium">3. Start</h6>
+//         <p className="text-base font-medium text-muted text-opacity-60 mb-4">
+//           Once npm install is done now you an run the app.
+//         </p>
+
+//         <div className="py-4 px-3 rounded-md bg-dark_grey">
+//           <p className="text-sm text-black/60">npm run dev or yarn run dev</p>
+//         </div>
+//         <p className="text-base font-medium text-muted text-opacity-60 my-4">
+//           This command will start a local webserver{" "}
+//           <span className="dark:text-black">http://localhost:3000:</span>
+//         </p>
+//         <div className="py-4 px-3 rounded-md bg-dark_grey">
+//           <p className="text-sm text-black/60">
+//             {"> e-learning_project@2.0.0 dev"}
+//           </p>
+//           <p className="text-sm text-black/60 mt-1">{"> next dev"}</p>
+//           <p className="text-sm text-black/60 mt-6">{"-Next.js 14.2.4"}</p>
+//           <p className="text-sm text-black/60 mt-1">
+//             {"-Local: http://localhost:3000"}
+//           </p>
+//         </div>
+//       </div>
+//       <div className="p-6 rounded-md border mt-6 border-dark_border border-opacity-60">
+//         <h6 className="text-black text-lg font-medium">
+//           4. Build / Deployment
+//         </h6>
+//         <p className="text-base font-medium text-muted text-opacity-60 mb-4">
+//           After adding url run below command for build a app.
+//         </p>
+
+//         <div className="py-4 px-3 rounded-md bg-dark_grey">
+//           <p className="text-sm text-black/60">npm run build or yarn build</p>
+//         </div>
+//         <p className="text-base font-medium text-muted text-opacity-60 mt-6">
+//           Finally, Your webiste is ready to be deployed.🥳
+//         </p>
+//       </div>
+//     </div>
+//   );
+// };
+
 export const QuickStart = () => {
   return (
-    <div className="pb-10 md:scroll-m-[180px] scroll-m-28" id="start">
-      <h3 className=" text-black text-2xl font-semibold mt-8">Quick Start</h3>
-      <div className="p-6 rounded-md border mt-6 border-dark_border border-opacity-60">
-        <h6 className="text-black text-lg font-medium">1. Requirements</h6>
-        <p className="text-base font-medium text-muted text-opacity-60">
-          Before proceeding, you need to have the latest stable{" "}
-          <a href="https://nodejs.org/" className="text-primary">
-            node.js
-          </a>{" "}
-        </p>
-        <h6 className="mt-4 mb-2 text-black font-medium text-base">
-          Recommended environment:
-        </h6>
-        <ul className="list-disc text-muted text-opacity-60 ps-6">
-          <li>node js 20+</li>
-          <li>npm js 10+</li>
-        </ul>
-      </div>
-      <div className="p-6 rounded-md border mt-6 border-dark_border border-opacity-60">
-        <h6 className="text-black text-lg font-medium">2. Install</h6>
-        <p className="text-base font-medium text-muted text-opacity-60">
-          Open package folder and install its dependencies. We recommanded yarn
-          or npm.{" "}
-        </p>
-        <h6 className="mt-4 mb-2 text-black text-dark font-medium text-base">
-          1) Install with npm:
-        </h6>
-        <div className="py-4 px-3 rounded-md bg-dark_grey">
-          <p className="text-sm text-black/60">
-            <span className="text-yellow-500">cd</span> project-folder
-          </p>
-          <p className="text-sm text-black/60 mt-2">npm install</p>
-        </div>
-        <h6 className="mt-4 mb-2 text-black text-dark font-medium text-base">
-          1) Install with yarn:
-        </h6>
-        <div className="py-4 px-3 rounded-md bg-dark_grey">
-          <p className="text-sm text-black/60">
-            <span className="text-yellow-500">cd</span> project-folder
-          </p>
-          <p className="text-sm text-black/60 mt-2">yarn install</p>
-        </div>
-      </div>
-      <div className="p-6 rounded-md border mt-6 border-dark_border border-opacity-60">
-        <h6 className="text-black text-lg font-medium">3. Start</h6>
-        <p className="text-base font-medium text-muted text-opacity-60 mb-4">
-          Once npm install is done now you an run the app.
-        </p>
+    <section id="spi" className="scroll-mt-24 mb-16">
+      <span className="text-sm font-semibold text-[#635BFF]">
+        COMMUNICATION PROTOCOLS
+      </span>
 
-        <div className="py-4 px-3 rounded-md bg-dark_grey">
-          <p className="text-sm text-black/60">npm run dev or yarn run dev</p>
-        </div>
-        <p className="text-base font-medium text-muted text-opacity-60 my-4">
-          This command will start a local webserver{" "}
-          <span className="dark:text-black">http://localhost:3000:</span>
-        </p>
-        <div className="py-4 px-3 rounded-md bg-dark_grey">
-          <p className="text-sm text-black/60">
-            {"> e-learning_project@2.0.0 dev"}
-          </p>
-          <p className="text-sm text-black/60 mt-1">{"> next dev"}</p>
-          <p className="text-sm text-black/60 mt-6">{"-Next.js 14.2.4"}</p>
-          <p className="text-sm text-black/60 mt-1">
-            {"-Local: http://localhost:3000"}
-          </p>
-        </div>
-      </div>
-      <div className="p-6 rounded-md border mt-6 border-dark_border border-opacity-60">
-        <h6 className="text-black text-lg font-medium">
-          4. Build / Deployment
-        </h6>
-        <p className="text-base font-medium text-muted text-opacity-60 mb-4">
-          After adding url run below command for build a app.
-        </p>
+      <h2 className="text-3xl font-bold text-gray-900 mt-3 mb-4">
+        SPI – Serial Peripheral Interface
+      </h2>
 
-        <div className="py-4 px-3 rounded-md bg-dark_grey">
-          <p className="text-sm text-black/60">npm run build or yarn build</p>
-        </div>
-        <p className="text-base font-medium text-muted text-opacity-60 mt-6">
-          Finally, Your webiste is ready to be deployed.🥳
-        </p>
+      <p className="text-gray-600 leading-7">
+        SPI is a synchronous serial communication protocol used for
+        communication between a controller and peripheral devices such as
+        sensors, flash memories, displays and ADCs.
+      </p>
+
+      <div className="grid sm:grid-cols-2 gap-4 mt-6">
+        {[
+          ["SCLK", "Serial Clock generated by the master."],
+          ["MOSI", "Master Out Slave In."],
+          ["MISO", "Master In Slave Out."],
+          ["CS / SS", "Chip Select signal."],
+        ].map(([name, description]) => (
+          <div key={name} className="border rounded-lg p-4">
+            <h4 className="font-bold text-[#635BFF]">{name}</h4>
+            <p className="text-sm text-gray-600 mt-2">{description}</p>
+          </div>
+        ))}
       </div>
-    </div>
+
+      <h3 className="text-xl font-bold mt-8 mb-4">
+        SPI Communication Architecture
+      </h3>
+
+      <div className="bg-gray-50 border rounded-xl p-6">
+        <div className="grid grid-cols-2 gap-5">
+          <div
+            className="bg-white border-2 border-[#635BFF]
+                    rounded-xl p-5 text-center"
+          >
+            <h4 className="font-bold text-lg">SPI Master</h4>
+            <p className="text-sm text-gray-500 mt-2">Microcontroller</p>
+          </div>
+
+          <div
+            className="bg-white border-2 border-green-500
+                    rounded-xl p-5 text-center"
+          >
+            <h4 className="font-bold text-lg">SPI Slave</h4>
+            <p className="text-sm text-gray-500 mt-2">Sensor / Flash</p>
+          </div>
+        </div>
+
+        <div
+          className="mt-5 text-center text-sm
+                text-gray-600 space-y-2"
+        >
+          <p>Master → Slave : MOSI</p>
+          <p>Slave → Master : MISO</p>
+          <p>Master → Slave : SCLK</p>
+          <p>Master → Slave : CS</p>
+        </div>
+      </div>
+
+      <h3 className="text-xl font-bold mt-8 mb-4">SPI Communication Modes</h3>
+
+      <div className="overflow-x-auto border rounded-xl">
+        <table className="w-full text-sm">
+          <thead className="bg-gray-50">
+            <tr>
+              <th className="p-3 text-left">Mode</th>
+              <th className="p-3">CPOL</th>
+              <th className="p-3">CPHA</th>
+            </tr>
+          </thead>
+          <tbody className="divide-y">
+            {[
+              ["Mode 0", "0", "0"],
+              ["Mode 1", "0", "1"],
+              ["Mode 2", "1", "0"],
+              ["Mode 3", "1", "1"],
+            ].map((row) => (
+              <tr key={row[0]}>
+                <td className="p-3 font-semibold">{row[0]}</td>
+                <td className="p-3 text-center">{row[1]}</td>
+                <td className="p-3 text-center">{row[2]}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
   );
 };
