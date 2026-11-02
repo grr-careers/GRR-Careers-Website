@@ -83,7 +83,8 @@ const Footer = () => {
                   className="text-primary text-3xl lg:text-2xl inline-block me-2"
                 />
                 <p className="text-black text-base">
-                  Sai bablaji residential, Mahadevapura, Banglore, Karnataka(560048)
+                  Sai Balaji Residential, Mahadevapura, Bengaluru, Karnataka –
+                  560048
                 </p>
               </div>
               <Link

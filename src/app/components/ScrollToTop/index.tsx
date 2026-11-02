@@ -1,55 +1,84 @@
+// // "use client";
+
+// // export default function ScrollToTop() {
+// //   return (
+// //     <div className="fixed top-[80px] left-0 right-0 z-40 w-full">
+// //       <div className="flex items-center justify-center bg-primary px-3 py-3 text-center text-white shadow-md">
+// //         <p className="text-xs font-semibold sm:text-sm md:text-base">
+// //           New Batch Starting from 9th November 2026
+// //         </p>
+// //       </div>
+// //     </div>
+// //   );
+// // }
+
+// "use client";
+
+// import { useEffect, useState } from "react";
+
+// export default function ScrollToTop() {
+//   const [isVisible, setIsVisible] = useState(true);
+
+//   useEffect(() => {
+//     const hideAnnouncement = () => {
+//       setIsVisible(false);
+//     };
+
+//     window.addEventListener("grr:hide-announcement", hideAnnouncement);
+
+//     return () => {
+//       window.removeEventListener("grr:hide-announcement", hideAnnouncement);
+//     };
+//   }, []);
+
+//   if (!isVisible) return null;
+
+//   return (
+//     <div className="fixed top-[80px] left-0 right-0 z-30 w-full">
+//       <div className="flex items-center justify-start bg-primary px-4 py-3 text-left text-white shadow-md">
+//         <p className="text-xs font-semibold sm:text-sm md:text-base">
+//           New Batch Starting from 9th November 2026
+//         </p>
+//       </div>
+//     </div>
+//   );
+// }
+
 "use client";
+
 import { useEffect, useState } from "react";
-import Link from "next/link";
 
 export default function ScrollToTop() {
-  const [isVisible, setIsVisible] = useState(false);
-
-  // Top: 0 takes us all the way back to the top of the page
-  // Behavior: smooth keeps it smooth!
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
+  const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
-    // Button is displayed after scrolling for 500 pixels
-    const toggleVisibility = () => {
-      if (window.pageYOffset > 300) {
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
-      }
+    const hideAnnouncement = () => setIsVisible(false);
+    const showAnnouncement = () => setIsVisible(true);
+
+    window.addEventListener("grr:hide-announcement", hideAnnouncement);
+    window.addEventListener("grr:show-announcement", showAnnouncement);
+
+    return () => {
+      window.removeEventListener("grr:hide-announcement", hideAnnouncement);
+      window.removeEventListener("grr:show-announcement", showAnnouncement);
     };
-
-    window.addEventListener("scroll", toggleVisibility);
-
-    return () => window.removeEventListener("scroll", toggleVisibility);
   }, []);
 
   return (
-    <div className="fixed bottom-8 right-8 z-999">
-      <div className="flex items-center gap-2.5">
-        <p
-          // href={
-          //   "https://getnextjstemplates.com/products/e-learning-nextjs-with-app-directory-free-landing-page-template"
-          // }
-          // target="_blank"
-          className="hidden lg:block bg-primary text-white hover:bg-primary/15 hover:text-primary text-sm font-medium px-4 py-3.5 leading-none rounded-lg text-nowrap"
-        >
+    <div
+      className={`fixed top-[80px] left-0 right-0 z-30 w-full transition-all duration-300 ${
+        isVisible
+          ? "opacity-100 translate-y-0"
+          : "opacity-0 -translate-y-full pointer-events-none"
+      }`}
+    >
+      <div className="flex items-center justify-start bg-primary px-4 py-3 text-left text-white shadow-md">
+        {/* <p className="text-xs font-semibold sm:text-sm md:text-base">
+          New Batch Starting from 9th November 2026
+        </p> */}
+        <p className="w-full text-center text-xs font-semibold sm:text-sm md:text-base">
           New Batch Starting from 9th November 2026
         </p>
-        {isVisible && (
-          <div
-            onClick={scrollToTop}
-            aria-label="scroll to top"
-            className="back-to-top flex h-10 w-10 cursor-pointer items-center justify-center rounded-md bg-primary text-white shadow-md transition duration-300 ease-in-out hover:bg-dark"
-          >
-            <span className="mt-[6px] h-3 w-3 rotate-45 border-l border-t border-white"></span>
-          </div>
-        )}
       </div>
     </div>
   );
