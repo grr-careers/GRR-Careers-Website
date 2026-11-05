@@ -10,7 +10,7 @@ const HeaderData: HeaderType[] = [
   { label: 'Courses', href: '/#courses  ' },
   // { label: 'Mentor', href: '/#mentor' },
   { label: 'Contact Us', href: '/#contact' },
-  { label: 'Docs', href: '/documentation' },
+  { label: 'About Training', href: '/documentation' },
 ]
 
 // const TechGaintsData: { imgSrc: string }[] = [

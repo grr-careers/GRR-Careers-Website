@@ -29,13 +29,13 @@ const Hero = () => {
                 <Icon icon="solar:arrow-right-linear" className="text-2xl" />
               </a>
 
-              <a
+              {/* <a
                 href="/contact"
                 className="inline-flex items-center gap-3 bg-midnight_text hover:bg-purple-600 text-white font-semibold px-8 py-4 transition duration-300"
               >
                 Enroll Now
                 <Icon icon="solar:arrow-right-linear" className="text-2xl" />
-              </a>
+              </a> */}
             </div>
 
             {/* Training Highlights */}

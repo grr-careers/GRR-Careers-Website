@@ -202,7 +202,7 @@ const Courses = () => {
                 </div>
 
                 {/* Bottom Action Buttons */}
-                <div className="relative z-10 grid grid-cols-3 border-t border-[#7c3aed] bg-[#2d2d2d]">
+                <div className="relative z-10 grid grid-cols-2 border-t border-[#7c3aed] bg-[#2d2d2d]">
                   {/* Contact Us */}
                   {/* <Link
                   href={`/contact?course=${encodeURIComponent(course.heading)}`}
@@ -226,12 +226,12 @@ const Courses = () => {
                   </Link>
 
                   {/* Brochure */}
-                  <Link
+                  {/* <Link
                     href={`/contact?course=${encodeURIComponent(course.heading)}&request=brochure`}
                     className="flex min-h-11 items-center justify-center px-1 text-center text-sm font-semibold text-white transition-colors duration-300 hover:bg-[#7c3aed] sm:text-lg"
                   >
                     Brochure
-                  </Link>
+                  </Link> */}
                 </div>
               </article>
             ))}
