@@ -39,7 +39,7 @@ export default function ScrollToTop() {
           New Batch Starting from 9th November 2026
         </p> */}
         <p className="text-xs font-medium sm:text-sm">
-          For Details & Registration: +91 9148575968
+          For Details & Registration Contact Us: +91 9148575968
         </p>
       </div>
     </div>
