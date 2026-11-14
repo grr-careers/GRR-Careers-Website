@@ -35,9 +35,9 @@ export default function ScrollToTop() {
         </p>
       </div> */}
       <div className="flex flex-col items-center justify-center bg-primary px-3 py-2 text-center text-white">
-        <p className="text-xs font-semibold sm:text-sm">
+        {/* <p className="text-xs font-semibold sm:text-sm">
           New Batch Starting from 9th November 2026
-        </p>
+        </p> */}
         <p className="text-xs font-medium sm:text-sm">
           For Details & Registration: +91 9148575968
         </p>
